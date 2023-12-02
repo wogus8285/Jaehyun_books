@@ -11,7 +11,9 @@
     <!-- css 남꺼 -->
     <!-- xeicon -->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
-    
+    <!-- slick slider-->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
 
     <!-- css 내꺼 -->
     <link rel="stylesheet" href="../css/common.css">
@@ -20,59 +22,72 @@
     
     <!-- 제이쿼리 -->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
 
   
   </head>
   <body>
 
     <div class="wrap">
-      <div class="header">
-        <div class="popup_event">
+      <!-- ## TOP -->
+      <div class="top">
+        <div class="container">
           <p class="p2">
-            오직 재현북스에서만 누릴 수 있는 특별한 혜택! 화면 속 작은 글자를 읽느라 눈이 피로할 독자님을 위하여 SSS급 당근을 준비했습니다!
+          오직 재현북스에서만 누릴 수 있는 특별한 혜택! 화면 속 작은 글자를 읽느라 눈이 피로할 독자님을 위하여 SSS급 당근을 준비했습니다!
           </p>
-          <i class="xi-close-min"></i>
-        </div>
-
-        <div class="logo_wrap">
-          <div class="logo">재현북스</div>
-        <div class="search">
-          <input type="text" placeholder="검색어 입력">
-        </div>
-        </div>
-
-        <div class="gnb">
-          <div class="cate">
-            <div class="icon"></div>
-            <p>카테고리</p>
-          </div>
-          <ul>
-            <li>
-              <p># 판타지</p>
-            </li>
-            <li>
-              <p># 로맨스</p>
-            </li>
-            <li>
-              <p># 일상/개그</p>
-            </li>
-            <li>
-              <a href="#"><p># 29금</p><img src="" alt=""></a>
-            </li>
-          </ul>
+          <i class="xi-close"></i>
         </div>
       </div>
+     
+      <!-- ## header -->
+      <div class="header">
+        <div class="container">
+          <div class="logo_wrap">
+            <div class="logo">재현북스</div>
+          <div class="search">
+            <input type="text" placeholder="검색어 입력">
+          </div>
+          </div>
+  
+          <!-- <div class="gnb"> -->
+            <div class="gnb">
+              <div class="cate">
+                <i class="xi-bars"></i>
+                <p>카테고리</p>
+              </div>
+              <ul>
+                <li>
+                  <p># 판타지</p>
+                </li>
+                <li>
+                  <p># 로맨스</p>
+                </li>
+                <li>
+                  <p># 일상/개그</p>
+                </li>
+                <li>
+                  <a class="porn" href="#"><p># 29금</p><img src="../images/main/29_s.png" alt=""></a>
+                </li>
+              </ul>
+            </div>
+          <!-- </div> -->
+        </div>
+        
+      </div>
+  
 
+      <!-- 슬라이더 -->
       <div class="slider_main">
         <div class="slides">
           <div class="slide">
             <a href="#">
               <div class="photo">
                 <img src="../images/main/slide1.jpg" alt="">
-              </div>
-              <div class="text">
-                <h3>재현북스에서<br>독자님들께 당근을 쏩니다!!!!</h3>
-                <p>비타민A와 베타카로틴이 풍부한 당근을 먹고 눈 건강을 챙기세요</p>
+                <div class="text">
+                  <h3>재현북스에서<br>독자님들께 당근을 쏩니다!!!!</h3>
+                  <p>비타민A와 베타카로틴이 풍부한 당근을 먹고 눈 건강을 챙기세요</p>
+                </div>
               </div>
             </a>
           </div>
@@ -96,21 +111,22 @@
               </div>
               <div class="text">
                 <h3>19금보다 더 뜨겁게!!<br>어른들의 사랑, 궁금하신가요?</h3>
-                <p>로맨스...? 그런 동화같은 이야기는 너무 시시하지 않아</p>
+                <p>로맨스? 그런 동화같은 이야기는 너무 시시하지 않아...?</p>
               </div>
             </a>
           </div>
         </div>
 
         <div class="control">
-          <div class="prev_btn"></div>
-          <div class="next_btn"></div>
+          <i class="xi-angle-left prev"></i>
+          <i class="xi-angle-right next"></i>
         </div>
 
       </div>
 
-      <div class="contents">
-        
+      <!-- 섹션 -->
+      <div class="container">
+        <!-- 섹션 1 -->
         <div class="section_1">
           <h3>Today Best</h3>
           <p>인기 웹소설이 한 곳에 모였다. 아무거나 골라도 꿀잼 보장~</p>
@@ -123,7 +139,9 @@
           </ul>
         </div>
 
+        <!-- 섹션2 -->
         <div class="section_2">
+
           <div class="left">
             <h3>E-Book 구매<br>런칭 기념 파격 할인!</h3>
             <p>24시간 역대급 한정 특가~!!</p>
@@ -136,34 +154,32 @@
           <div class="right">
             <ul>
               <li><a href="#">
-                <div class="photo"><img src="../images/main/cover3.jpg" alt=""></div></div>
+                <div class="photo"><img src="../images/main/cover3.jpg" alt=""></div>
                 <div class="text_box">
-                  <p>고성의 추방자</p>
+                  <p class="p1">고성의 추방자</p>
                   <p class="p3">9,800원</p>
-                  <p class="p2"><span>39.8%</span>5,900원</p>
+                  <p class="p2"><span>39.8% </span>5,900원</p>
                 </div>
               </a></li>
               <li><a href="#">
-                <div class="photo"><img src="../images/main/cover1.jpg" alt=""></div></div>
+                <div class="photo"><img src="../images/main/cover1.jpg" alt=""></div>
                 <div class="text_box">
                   <p>사랑은 달밤에서 시작되는 것...</p>
                   <p class="p3">12,800원</p>
-                  <p class="p2"><span>46.1%</span>6,900원</p>
+                  <p class="p2"><span>46.1% </span>6,900원</p>
                 </div>
               </a></li>
               <li><a href="#">
-                <div class="photo"><img src="../images/main/cover2.jpg" alt=""></div></div>
+                <div class="photo"><img src="../images/main/cover2.jpg" alt=""></div>
                 <div class="text_box">
                   <p>옥타곤 위에 두 남자</p>
                   <p class="p3">19,800원</p>
-                  <p class="p2"><span>50.6%</span>9,800원</p>
+                  <p class="p2"><span>50.6% </span>9,800원</p>
                 </div>
               </a></li>
             </ul>
           </div>
-
         </div>
-      
       
         <div class="section_3">
             <h3>2023년 화제의 작품.ZIP</h3>
@@ -182,15 +198,15 @@
 
       </div>
 
-      <div class="footer_container">
-        <div class="footer">
+      <div class="footer">
+        <div class="container">
           <div class="left">
             <div class="sns">
               <ul>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
-                <li><a href="#"></a></li>
+                <li><a href="#"><img src="../images/main/gnb_facebook.png" alt=""></a></li>
+                <li><a href="#"><img src="../images/main/gnb_instar.png" alt=""></a></li>
+                <li><a href="#"><img src="../images/main/gnb_youtube.png" alt=""></a></li>
+                <li><a href="#"><img src="../images/main/gnb_blog.png" alt=""></a></li>
               </ul>
             </div>
 
@@ -224,5 +240,35 @@
     </div>
 
 
+
+    <script>
+
+      // ## TOP
+
+      $('.top i').click(function(){
+        console.log('dd')
+        $('.top').css('display' , 'none')
+      })
+
+
+
+      // ## 슬라이더(메인)
+      $('.slides').slick({
+        dots : true,
+        autoplay : true,
+        autoplaySpeed	:	3000,
+        // centerMode : true,
+        // easing	:'linear',
+        prevArrow : $('.slider_main .control i.prev'),
+        nextArrow : $('.slider_main .control i.next'),
+      });
+
+
+    
+    
+    
+
+
+    </script>
   </body>
 </html>

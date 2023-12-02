@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section, img {
 }
 body {
 	line-height: 1;
+	color: #222;
 }
 ol, ul {
 	list-style: none;
@@ -51,3 +52,46 @@ a {
     text-decoration: none;
     color: inherit;
 }
+
+/* 폰트사이즈 */
+h1, h2, h3, h4, h5, h6{
+	font-weight: 600;
+}
+
+h1{
+	font-size: 60px;
+}
+
+h2{
+	font-size: 40px;
+}
+
+h3{
+	font-size: 34px;
+	font-weight: 600;
+	letter-spacing: -0.5px;
+}
+
+h4{
+	font-size: 30px;
+}
+
+h5{
+	font-size: 24px;
+}
+
+/* ???뭐지?? 여기서 폰트 웨이트를 줬는데, 왜 common.css에서 주는 폰트 웨이트가 안먹힘? */
+p{
+	/* font-weight: 400; */
+	font-size: 17px;
+}
+
+.p2{
+	font-size: 14px;
+}
+
+.p3{
+	font-size: 12px;
+}
+
+/*  */
