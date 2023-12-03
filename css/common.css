@@ -385,14 +385,14 @@ width: 320px;
 .footer .left .sns li:nth-child(4) a:hover{
     display: block;
     border-radius: 3px;
-    background-color: rgb(20, 104, 28);
+    background-color: rgb(2, 150, 22);
 }
 
 .footer .left p{
     font-weight: 400;
 }
 
-.footer .left .p3 {
+.footer .left .p3 {       
     font-weight: 300;
     margin-bottom: 20px;
 }
