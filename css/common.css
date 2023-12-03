@@ -287,9 +287,12 @@ width: 320px;
     justify-content: space-between;
 }
 .section_2 .right img{
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
 }
 
+.section_2 .right p:first-child{
+    padding-top: 10px;
+}
 .section_2 .right p{
     font-weight: 600;
 }
