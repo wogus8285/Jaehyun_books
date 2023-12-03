@@ -67,7 +67,10 @@
                   <p># 일상/개그</p>
                 </li>
                 <li>
-                  <a class="porn" href="#"><p># 29금</p><img src="../images/main/29_s.png" alt=""></a>
+                  <p># SF</p>
+                </li>
+                <li>
+                  <a class="porn" href="#"><p># 29금</p><img src="../images/main/29_ss.png" alt=""></a>
                 </li>
               </ul>
             </div>
@@ -250,6 +253,23 @@
         $('.top').css('display' , 'none')
       })
 
+      // ## gnb 
+      // # 클론 만들기
+      var gnbClone = $('.gnb').contents().clone()
+      var gnb2 = $('<div class="gnb gnb2"></div>')
+      gnb2.append(gnbClone)
+      // console.log(gnb2);
+      gnb2.appendTo('.header')
+
+      var headerHeight = $('.header').outerHeight()
+
+      $(window).scroll(function(){
+        if($(this).scrollTop() > headerHeight){
+          gnb2.addClass('show')
+        }else{
+          gnb2.removeClass('show')
+        }
+      })
 
 
       // ## 슬라이더(메인)

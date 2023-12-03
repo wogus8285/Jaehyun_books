@@ -66,54 +66,66 @@ body{
     align-items: center;
 }
 
-.header .gnb{
+    /* # gnb # */
+.gnb{
     display: flex;
     align-items: center;
     height: 60px;
     justify-content: space-between;
 }
 
-.header .gnb .cate{
+    /* 폐기 */
+.gnb .cate{
     display: flex;
     align-items: center;
     gap: 10px;
-    /* margin-left: 45px; */
+    margin-left: 45px;
+    /* 카테고리 살릴거면 gnb.ul{width} 줄이기*/
+    display: none;
 }
 
-.header .gnb .cate i{
+.gnb .cate i{
     font-size: 22px;
 }
 
-.header .gnb .icon::before{
-    content: '';
-    /* position: absolute; */
-    width: 26px;
-    height: 2px;
-    background: #333;
-    /* transition: 0.2s; */
-    /* transform: translateY(-7px); */
-    box-shadow: 0 7px 0 #333;
-}
-
-.header .gnb ul{
+.gnb ul{
     display: flex;
-    width: 760px; 
+    margin: 0 auto;
+    width: 1000px; 
     justify-content: space-between;
-    /* background-color: red; */
 }
 
-.header .gnb .porn{
+.gnb .porn{
     display: flex;
     gap: 2px;
     align-items: center;
-    /* align-items: flex-end;  */
 }
-.header .gnb .porn img{
+.gnb .porn img{
     margin-bottom: -2px;
     width: 17px;
 }
 
-/* ## slider */
+
+/* # gnb2 # */
+.gnb2{
+    width: 100%;
+    height: 100px; 
+    background-color: #222;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.gnb2.show{
+    opacity: 0.95;
+    z-index: 2;
+}
+
+
+/* ## slider ## */
 .slider_main{
     width: 1400px;
     margin: 0 auto;
@@ -142,7 +154,6 @@ body{
     left: 140px;
     line-height: 1.5;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
-
     /* z-index: 989999999999999999999999999; */
     /* margin-bottom: -100px; */
 }
@@ -197,6 +208,14 @@ body{
 .section_1 ul{
     display: flex;
     justify-content: space-between;
+}
+
+.section_1 li{
+    border-radius: 15px;
+    overflow: hidden;
+}
+.section_1 a:hover img{
+    transform: scale(1.1)
 }
 
 
@@ -285,6 +304,15 @@ width: 320px;
     color: #FF7455;   
 }
 
+    /* 호버하며 줄거리 나오게 해도 될듯 */
+.section_2 .photo{
+    overflow: hidden;
+}
+.section_2 .photo img:hover{
+    transform: scale(1.1)
+}
+
+
 
 /*  ## section_3 */
 .section_3{
@@ -307,6 +335,14 @@ width: 320px;
     grid-template-columns: repeat(4 , 1fr);
     gap: 40px;
 }
+.section_3 li{
+    overflow: hidden;
+}
+.section_3 a:hover img{
+    transform: scale(1.1)
+}
+
+
 
 /*  ## footer */
 .footer{
@@ -323,8 +359,30 @@ width: 320px;
 
 .footer .left .sns ul{
     display: flex;
+    gap: 15px;
     margin-top: 50px;
     margin-bottom: 20px;
+}
+
+.footer .left .sns li:nth-child(1) a:hover{
+    display: block;
+    border-radius: 5px;
+    background-color: rgb(83, 85, 242);
+}
+.footer .left .sns li:nth-child(2) a:hover{
+    display: block;
+    border-radius: 5px;
+    background: linear-gradient(to right, #D83283, #FF95C8);
+}
+.footer .left .sns li:nth-child(3) a:hover{
+    display: block;
+    border-radius: 5px;
+    background-color: rgb(245, 77, 77);
+}
+.footer .left .sns li:nth-child(4) a:hover{
+    display: block;
+    border-radius: 3px;
+    background-color: rgb(20, 104, 28);
 }
 
 .footer .left p{
