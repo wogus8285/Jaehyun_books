@@ -14,6 +14,7 @@
     <!-- slick slider-->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    
 
     <!-- css 내꺼 -->
     <link rel="stylesheet" href="../css/common.css">
@@ -23,7 +24,11 @@
     
     <!-- 제이쿼리 -->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <!-- 슬릭 -->
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- 스크롤리빌 -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
     
 
   
@@ -152,6 +157,7 @@
             <h3>E-Book 구매<br>런칭 기념 파격 할인!</h3>
             <p>24시간 역대급 한정 특가~!!</p>
             <div class="time_limit">
+              <div class="time_icon"></div>
               <h3>02:11:07</h3>
             </div>
             <p class="p2">서둘러요, 얼마 남지 않았어요...!</p>
@@ -295,10 +301,51 @@
       });
 
 
-    
-    
-    
+      // ## time_limit (자바스크립트)
+      const time = document.querySelector('.time_limit h3')
+      const hurry = document.querySelector('.section_2 .left .p2')
 
+      function getTimes() {
+          const now = new Date()
+          
+          const hour = now.getHours()
+          const min = now.getMinutes()
+          const sec = now.getSeconds()
+
+          // console.log(now);
+
+          const hours = `${hour > 2 ? `0${24 - hour}` : `${24 - hour}`}`
+          const minutes = `${min > 50 ? `0${60 - min}` : `${60 - min}`}`
+          const seconds = `${sec > 50 ? `0${60 - sec}` : `${60 - sec}`}`
+     
+          // const hours = `${hour < 10 ? `0${hour}` : `${hour}`}`
+          // const minutes = `${min < 10 ? `0${min}` : `${min}`}`
+          // const seconds = `${sec < 10 ? `0${sec}` : `${sec}`}`
+
+          time.innerText = `${hours} : ${minutes} : ${seconds}`
+          hurry.innerText = `서둘러요,  이제 ${parseInt(hours) + 1}시간도 남지 않았어요...!`
+        }
+
+      function init() {
+          getTimes()
+          setInterval(getTimes, 500)
+      }
+
+      init()
+
+      // 제이쿼리로 시계 돌리기
+      var turn = 0
+      setInterval(function(){
+        
+        turn ++
+        var turnDeg = 360 * turn 
+
+        console.log(turnDeg);
+        $('.section_2 .left .time_icon')
+        // .css({transform :  'rotate(' + turnDeg + 'deg)'})
+        .css({transform :  `rotate(${turnDeg}deg)`})
+      },2000)
+    
 
     </script>
   </body>

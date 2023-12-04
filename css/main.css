@@ -160,21 +160,24 @@ width: 320px;
   top: 0;
 }
 
-.section_2 .left .time_limit::after{
-  content: '';
-  width: 8px;
-  height: 8px;
-  /* background-color: red; */
-  border-bottom: 2px solid #fff;
-  border-left: 2px solid #fff;
-
-  position: absolute;
-  top: 6px;
-  left: 35px;
-
-  transform-origin: bottom left;
-  transform: rotate(0deg);
+.section_2 .left .time_icon{
+    content: '';
+    width: 8px;
+    height: 8px;
+    /* background-color: red; */
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+    
+    position: absolute;
+    top: 6px;
+    left: 35px;
+    
+    transform-origin: bottom left;
+    /* transform: rotate(0deg); */
+    transition: all 1.3s;
 }
+
+
 
 .section_2 .right{
   flex: 1;
