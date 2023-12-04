@@ -13,6 +13,7 @@ body{
   font-family: 'Nanum Pen Script', cursive;
   font-size: 50px;
   color: #333;
+  cursor: pointer;
 }
 /*
   100 - thin
