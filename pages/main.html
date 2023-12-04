@@ -17,6 +17,7 @@
 
     <!-- css 내꺼 -->
     <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
     
@@ -74,8 +75,10 @@
                 </li>
               </ul>
             </div>
-          <!-- </div> -->
         </div>
+
+        <!-- UP_botton -->
+        <div class="up_btn"><img src="../images/Up_button.png" alt=""></div>
         
       </div>
   
@@ -244,6 +247,7 @@
 
 
 
+
     <script>
 
       // ## TOP
@@ -263,12 +267,19 @@
 
       var headerHeight = $('.header').outerHeight()
 
+            // gnb 클론 + 업버튼 //
       $(window).scroll(function(){
         if($(this).scrollTop() > headerHeight){
           gnb2.addClass('show')
+          $('.up_btn').addClass('show')
         }else{
           gnb2.removeClass('show')
+          $('.up_btn').removeClass('show')
         }
+      })
+
+      $('.up_btn').click(function(){
+        $('html, body').animate({scrollTop: 0})
       })
 
 
