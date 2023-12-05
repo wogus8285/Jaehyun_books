@@ -251,15 +251,3 @@ width: 320px;
 
 /*  ## footer ## (footer.css) */
 
-/* 업버튼 */
-
-.up_btn{
-    position: fixed;
-    bottom: -50px;
-    right: 30px;
-    transition: all 0.3s;
-}
-.up_btn.show{
-    bottom: 30px;
-    display: block;
-}

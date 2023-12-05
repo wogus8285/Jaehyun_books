@@ -48,43 +48,7 @@
      
       <!-- ## header -->
       <div class="header">
-        <div class="container">
-          <div class="logo_wrap">
-            <div class="logo">재현북스</div>
-          <div class="search">
-            <input type="text" placeholder="검색어 입력">
-          </div>
-          </div>
-  
-          <!-- <div class="gnb"> -->
-            <div class="gnb">
-              <div class="cate">
-                <i class="xi-bars"></i>
-                <p>카테고리</p>
-              </div>
-              <ul>
-                <li>
-                  <p># 판타지</p>
-                </li>
-                <li>
-                  <p># 로맨스</p>
-                </li>
-                <li>
-                  <p># 일상/개그</p>
-                </li>
-                <li>
-                  <p># SF</p>
-                </li>
-                <li>
-                  <a class="porn" href="#"><p># 29금</p><img src="../images/main/29_ss.png" alt=""></a>
-                </li>
-              </ul>
-            </div>
-        </div>
-
-        <!-- UP_botton -->
-        <div class="up_btn"><img src="../images/Up_button.png" alt=""></div>
-        
+        <!-- header .container => load -->
       </div>
   
 
@@ -92,7 +56,7 @@
       <div class="slider_main">
         <div class="slides">
           <div class="slide">
-            <a href="#">
+            <a href="../pages/event_1.html">
               <div class="photo">
                 <img src="../images/main/slide1.jpg" alt="">
                 <div class="text">
@@ -211,41 +175,7 @@
       </div>
 
       <div class="footer">
-        <div class="container">
-          <div class="left">
-            <div class="sns">
-              <ul>
-                <li><a href="#"><img src="../images/main/gnb_facebook.png" alt=""></a></li>
-                <li><a href="#"><img src="../images/main/gnb_instar.png" alt=""></a></li>
-                <li><a href="#"><img src="../images/main/gnb_youtube.png" alt=""></a></li>
-                <li><a href="#"><img src="../images/main/gnb_blog.png" alt=""></a></li>
-              </ul>
-            </div>
-
-            <div class="info">
-              <p>재현북스 사업자 정보</p>
-              <p class="p3">
-                이용약관 | 개인정보처리방침 | 청소년보호정책 | 사업자정보확인
-              </p>
-            </div>
-
-            <div class="copyright">
-              <p class="p2">ⓒ JaeHyun books Corp.</p>
-            </div>
-            
-            <div class="logo">재현북스</div>
-          </div>
-
-          <div class="right">
-            <p>재현북스 고객센터</p>
-            <h5>T:010-8437-8285</h5>
-            <div class="texts">
-              <p class="p2">평일- 0:00 ~ 24:00</p>
-              <p class="p2">주말- 0:00 ~ 24:00</p>
-            </div>
-            <p class="p2">연중 무휴</p>
-          </div>
-        </div>
+        <!--footer .container 로드 -->
       </div>
 
 
@@ -255,6 +185,10 @@
 
 
     <script>
+      // 로드
+       $('.header').load('../inc/header.html')
+       $('.footer').load('../inc/footer.html')
+
 
       // ## TOP
 
@@ -262,32 +196,6 @@
         console.log('dd')
         $('.top').css('display' , 'none')
       })
-
-      // ## gnb 
-      // # 클론 만들기
-      var gnbClone = $('.gnb').contents().clone()
-      var gnb2 = $('<div class="gnb gnb2"></div>')
-      gnb2.append(gnbClone)
-      // console.log(gnb2);
-      gnb2.appendTo('.header')
-
-      var headerHeight = $('.header').outerHeight()
-
-            // gnb 클론 + 업버튼 //
-      $(window).scroll(function(){
-        if($(this).scrollTop() > headerHeight){
-          gnb2.addClass('show')
-          $('.up_btn').addClass('show')
-        }else{
-          gnb2.removeClass('show')
-          $('.up_btn').removeClass('show')
-        }
-      })
-
-      $('.up_btn').click(function(){
-        $('html, body').animate({scrollTop: 0})
-      })
-
 
       // ## 슬라이더(메인)
       $('.slides').slick({
@@ -314,7 +222,7 @@
 
           // console.log(now);
 
-          const hours = `${hour > 2 ? `0${24 - hour}` : `${24 - hour}`}`
+          const hours = `${hour > 14 ? `0${24 - hour}` : `${24 - hour}`}`
           const minutes = `${min > 50 ? `0${60 - min}` : `${60 - min}`}`
           const seconds = `${sec > 50 ? `0${60 - sec}` : `${60 - sec}`}`
      
