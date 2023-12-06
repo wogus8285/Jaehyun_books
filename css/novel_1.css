@@ -6,7 +6,6 @@
     margin-top: 100px;
     display: flex;
     flex-direction: column;
-    gap: 40px;
 }
 
 /* 줄거리 등 */
@@ -37,7 +36,7 @@
 
 /* 연재주기 & 연령제한 */
 .cycle{
-    margin: 0 auto;
+    margin: 40px auto;
     display: flex;
     gap: 250px;
     border: 5px solid #ddd;
@@ -54,4 +53,16 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+/* ## 연재목록 */
+.list{
+    width: 46%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.title h6{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #333;
 }
