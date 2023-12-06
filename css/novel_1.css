@@ -1,0 +1,57 @@
+
+
+
+/* ## 작품소개  */
+.info{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* 줄거리 등 */
+.novel_info{
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+}
+
+.star{
+    margin: 10px 0;
+}
+
+.p2 span{
+    font-weight: 600;
+}
+
+.p2{
+    font-weight: 400;
+    color: #333;
+}
+
+.p3{
+    width: 592px;
+    margin: 15px 0 ;
+    font-weight: 300;
+}
+
+/* 연재주기 & 연령제한 */
+.cycle{
+    margin: 0 auto;
+    display: flex;
+    gap: 250px;
+    border: 5px solid #ddd;
+    padding: 20px 140px;
+    position: relative;
+}
+
+.cycle::after{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 30px;
+    background-color: #ddd;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

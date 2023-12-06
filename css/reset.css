@@ -84,10 +84,16 @@ h5{
 	font-size: 24px;
 }
 
+h6{
+	font-size: 20px;
+	font-weight: 400;
+}
+
 /* ???뭐지?? 여기서 폰트 웨이트를 줬는데, 왜 common.css에서 주는 폰트 웨이트가 안먹힘? */
 p{
 	/* font-weight: 400; */
 	font-size: 17px;
+	font-size: 500;
 }
 
 .p2{

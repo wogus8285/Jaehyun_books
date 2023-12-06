@@ -1,0 +1,46 @@
+
+
+.contents{
+}
+
+.age_limit{
+    height: 90vh;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .age_limit img{
+    width: 525px;
+} */
+
+h5{
+    margin: 40px 0;
+    color: #787878;
+}
+
+.btns{
+    /* margin-top: 40px; */
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn{
+    width: 220px;
+    height: 80px;
+    background-color: #fff;
+    border-radius: 999px;
+    border: 1px solid #333;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 80px;
+}
+
+.btn.filled{
+    color: #fff;
+    background-color: #333;
+}
