@@ -106,11 +106,11 @@
           <h3>Today Best</h3>
           <p>인기 웹소설이 한 곳에 모였다. 아무거나 골라도 꿀잼 보장~</p>
           <ul>
-            <li><a href="#"><img src="#" alt=""><img src="../images/main/tobest_1.png" alt=""></a></li>
-            <li><a href="#"><img src="#" alt=""><img src="../images/main/tobest_2.png" alt=""></a></li>
-            <li><a href="#"><img src="#" alt=""><img src="../images/main/tobest_3.png" alt=""></a></li>
-            <li><a href="#"><img src="#" alt=""><img src="../images/main/tobest_4.png" alt=""></a></li>
-            <li><a href="#"><img src="#" alt=""><img src="../images/main/tobest_5.png" alt=""></a></li>
+            <li><a href="./novel_8.html"><img src="../images/main/tobest_1.png" alt=""></a></li>
+            <li><a href="./novel_4.html"><img src="../images/main/tobest_2.png" alt=""></a></li>
+            <li><a href="./novel_7.html"><img src="../images/main/tobest_3.png" alt=""></a></li>
+            <li><a href="./novel_6.html"><img src="../images/main/tobest_4.png" alt=""></a></li>
+            <li><a href="./novel_5.html"><img src="../images/main/tobest_5.png" alt=""></a></li>
           </ul>
         </div>
 
@@ -129,7 +129,7 @@
 
           <div class="right">
             <ul>
-              <li><a href="#">
+              <li><a href="./novel_3.html">
                 <div class="photo"><img src="../images/main/cover3.jpg" alt=""></div>
                 <div class="text_box">
                   <p class="p1">고성의 추방자</p>
@@ -145,7 +145,7 @@
                   <p class="p2"><span>46.1% </span>6,900원</p>
                 </div>
               </a></li>
-              <li><a href="#">
+              <li><a href="./novel_2.html">
                 <div class="photo"><img src="../images/main/cover2.jpg" alt=""></div>
                 <div class="text_box">
                   <p>옥타곤 위에 두 남자</p>
@@ -162,13 +162,13 @@
             <p>계묘년, SNS를 뜨겁게 달구었던 재현북스 Original 작품들만 골라 골라~</p>
           <ul>
             <li><a href="./novel_1.html"><img src="../images/main/cover1.jpg" alt=""></a></li>
-            <li><a href="#"><img src="../images/main/cover2.jpg" alt=""></a></li>
-            <li><a href="#"><img src="../images/main/cover3.jpg" alt=""></a></li>
-            <li><a href="#"><img src="../images/main/cover4.jpg" alt=""></a></li>
-            <li><a href="#"><img src="../images/main/cover5.jpg" alt=""></a></li>
-            <li><a href="#"><img src="../images/main/cover6.jpg" alt=""></a></li>
-            <li><a href="#"><img src="../images/main/cover7.jpg" alt=""></a></li>
-            <li><a href="#"><img src="../images/main/cover8.jpg" alt=""></a></li>
+            <li><a href="./novel_2.html"><img src="../images/main/cover2.jpg" alt=""></a></li>
+            <li><a href="./novel_3.html"><img src="../images/main/cover3.jpg" alt=""></a></li>
+            <li><a href="./novel_4.html"><img src="../images/main/cover4.jpg" alt=""></a></li>
+            <li><a href="./novel_5.html"><img src="../images/main/cover5.jpg" alt=""></a></li>
+            <li><a href="./novel_6.html"><img src="../images/main/cover6.jpg" alt=""></a></li>
+            <li><a href="./novel_7.html"><img src="../images/main/cover7.jpg" alt=""></a></li>
+            <li><a href="./novel_8.html"><img src="../images/main/cover8.jpg" alt=""></a></li>
           </ul>
         </div>
 
@@ -222,16 +222,16 @@
 
           // console.log(now);
 
-          const hours = `${hour > 14 ? `0${24 - hour}` : `${24 - hour}`}`
-          const minutes = `${min > 50 ? `0${60 - min}` : `${60 - min}`}`
-          const seconds = `${sec > 50 ? `0${60 - sec}` : `${60 - sec}`}`
+          const hours = `${hour > 13 ? `0${23 - hour}` : `${23 - hour}`}`
+          const minutes = `${min > 49 ? `0${59 - min}` : `${59 - min}`}`
+          const seconds = `${sec > 49 ? `0${59 - sec}` : `${59 - sec}`}`
      
           // const hours = `${hour < 10 ? `0${hour}` : `${hour}`}`
           // const minutes = `${min < 10 ? `0${min}` : `${min}`}`
           // const seconds = `${sec < 10 ? `0${sec}` : `${sec}`}`
 
           time.innerText = `${hours} : ${minutes} : ${seconds}`
-          hurry.innerText = `서둘러요,  이제 ${parseInt(hours) + 1}시간도 남지 않았어요...!`
+          hurry.innerText = `서둘러요,  오늘이 이제 ${parseInt(hours) + 1}시간도 남지 않았어요...!`
         }
 
       function init() {

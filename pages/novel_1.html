@@ -14,6 +14,12 @@
     <!-- slick slider-->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <!-- 매그니픽 팝업 -->
+    <link rel="stylesheet" href="../js/magnific-popup.css">
+    <!-- 스위트얼라트 팝업 -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.0/dist/sweetalert2.min.css
+    " rel="stylesheet"> -->
+    
 
     <!-- css 내꺼 -->
     <link rel="stylesheet" href="../css/common.css">
@@ -27,7 +33,11 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- 스크롤리빌 -->
     <script src="https://unpkg.com/scrollreveal"></script>
-
+    <!-- 매그니픽팝업 -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <!-- sweetalert 팝업  -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
     
 
 </head>
@@ -40,8 +50,8 @@
         </div>
 
         <!-- ## 작품소개 -->
-        <div class="info">
-            <div class="novel_info">
+        <div class="info_wrap">
+            <div class="info">
                 <div class="photo"><img src="../images/main/cover1.jpg" alt=""></div>
                 <div class="text_box">
                     <h3>사랑은 달밤에서 시작되는 것이랍니다.</h3>
@@ -56,15 +66,15 @@
                     <p class="p2"><span>박재현</span> 저</p>
                     <p class="p2"><span>재현북스</span> 출판</p>
                     <p class="p3">
-                        혼자가 되었다.
-                        법정공방 끝에 이혼이라는 최악의 과정으로.
+                        &nbsp;혼자가 되었다.<br>
+                        &nbsp;법정공방 끝에 이혼이라는 최악의 과정으로.<br><br>
                        
-                        웨딩드레스를 입고 행복한 미소를 짓고 있는 친구를 보고 있으니, 아직 잊지 못한 나의 끔찍한 결혼생활이 떠오른다.
-                       몇 년이 지났는데... 아직도 그 시절의 기억이 떠오르면 두려움에 몸이 떨린다.  나는 도망치듯 식장을 빠져나왔다. 
-                        하지만 식장을 나왔다고 집으로 갈 수도 없었다. 결혼식 장소가 다름 아닌 초호화 요트였으니. 귀가하겠다고 바다로 
-                       뛰어들 수는 없잖아... 나는 그냥 하염없이 달이 뜬 밤하늘을 바라보고 있었다.
+                        &nbsp;웨딩드레스를 입고 행복한 미소를 짓고 있는 친구를 보고 있으니, 아직 잊지 못한 나의 끔찍한 결혼생활이 떠오른다.
+                       몇 년이 지났는데... 아직도 그 시절의 기억이 떠오르면 두려움에 몸이 떨린다.  나는 도망치듯 식장을 빠져나왔다.<br> 
+                       &nbsp;하지만 식장을 나왔다고 집으로 갈 수도 없었다. 결혼식 장소가 다름 아닌 초호화 요트였으니. 귀가하겠다고 바다로 
+                       뛰어들 수는 없잖아... 나는 그냥 하염없이 달이 뜬 밤하늘을 바라보고 있었다.<br><br>
                        
-                        그런 나에게 ‘그 남자’가 찾아왔다.
+                       &nbsp;그런 나에게 ‘그 남자’가 찾아왔다.
                     </p>
                 </div>
             </div>
@@ -89,7 +99,7 @@
                             <p class="p2">2024.02.28</p>
                         </div>
                         <div class="btn">
-                            <p>보기</p>
+                            <a href="../popup/view_novel.html" class="view_novel"><p>보기</p></a>
                         </div>
                     </li>
                     <li>
@@ -98,7 +108,7 @@
                             <p class="p2">2024.02.28</p>
                         </div>
                         <div class="btn">
-                            <p>보기</p>
+                            <a href="../popup/view_novel.html" class="view_novel"><p>보기</p></a>
                         </div>
                     </li>
                     <li>
@@ -107,7 +117,7 @@
                             <p class="p2">2024.02.28</p>
                         </div>
                         <div class="btn">
-                            <p>보기</p>
+                            <a href="../popup/view_novel.html" class="view_novel"><p>보기</p></a>
                         </div>
                     </li>
                     <li>
@@ -116,7 +126,7 @@
                             <p class="p2">2024.02.28</p>
                         </div>
                         <div class="btn">
-                            <p>보기</p>
+                            <a href="../popup/view_novel.html" class="view_novel"><p>보기</p></a>
                         </div>
                     </li>
                     <li>
@@ -125,7 +135,7 @@
                             <p class="p2">2024.02.28</p>
                         </div>
                         <div class="btn">
-                            <p>보기</p>
+                            <a href="../popup/view_novel.html" class="view_novel"><p>보기</p></a>
                         </div>
                     </li>
                     <li>
@@ -134,7 +144,7 @@
                             <p class="p2">2024.02.28</p>
                         </div>
                         <div class="btn">
-                            <p>보기</p>
+                            <a href="../popup/view_novel.html" class="view_novel"><p>보기</p></a>
                         </div>
                     </li>
                     <li>
@@ -143,7 +153,7 @@
                             <p class="p2">2024.02.28</p>
                         </div>
                         <div class="btn">
-                            <p>보기</p>
+                            <a href="../popup/view_novel.html" class="view_novel"><p>보기</p></a>
                         </div>
                     </li>
                     <li>
@@ -152,7 +162,7 @@
                             <p class="p2">2024.02.28</p>
                         </div>
                         <div class="btn">
-                            <p>보기</p>
+                            <a href="../popup/view_novel.html" class="view_novel"><p>보기</p></a>
                         </div>
                     </li>
                     <li>
@@ -161,13 +171,17 @@
                             <p class="p2">2024.02.28</p>
                         </div>
                         <div class="btn">
-                            <p>보기</p>
+                            <a href="../popup/view_novel.html" class="view_novel"><p>보기</p></a>
                         </div>
                     </li>
                 </ul>
-                <div class="btn"><p>더보기<i class="xi-plus"></i></p></div>
+                <div class="btn viewmore"><p>더보기<i class="xi-plus"></i></p></div>
             </div>
         </div>
+
+
+     
+
 
         <!--## footer-->
         <div class="footer">
@@ -178,5 +192,19 @@
     <script>
        $('.header').load('../inc/header.html')
        $('.footer').load('../inc/footer.html')
+    </script>
+
+    <script>
+        $(document).ready(function() {
+
+        $('.view_novel').magnificPopup({
+            type: 'ajax',
+            alignTop: true,
+            overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
+        });
+
+      
+
+        });
     </script>
 </body>

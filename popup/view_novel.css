@@ -1,0 +1,8 @@
+.wrap{
+    background-color: #fff;
+    /* background-color: red; */
+    color:#333;
+    width: 800px;
+    height: 100%;
+    margin: 0 auto;
+}

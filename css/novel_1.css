@@ -2,40 +2,42 @@
 
 
 /* ## 작품소개  */
-.info{
+.info_wrap{
     margin-top: 100px;
     display: flex;
     flex-direction: column;
 }
 
 /* 줄거리 등 */
-.novel_info{
+.info{
     display: flex;
     gap: 35px;
     justify-content: center;
 }
 
-.star{
+.info_wrap .star{
     margin: 10px 0;
+    color: #F97939;
 }
 
-.p2 span{
+.info_wrap .p2 span{
     font-weight: 600;
 }
 
-.p2{
+.info_wrap .p2{
     font-weight: 400;
     color: #333;
 }
 
-.p3{
+.info_wrap .p3{
     width: 592px;
     margin: 15px 0 ;
-    font-weight: 300;
+    font-weight: 400;
+    color: #777;
 }
 
 /* 연재주기 & 연령제한 */
-.cycle{
+.info_wrap .cycle{
     margin: 40px auto;
     display: flex;
     gap: 250px;
@@ -44,7 +46,7 @@
     position: relative;
 }
 
-.cycle::after{
+.info_wrap .cycle::after{
     content: '';
     position: absolute;
     width: 1px;
@@ -57,12 +59,40 @@
 
 /* ## 연재목록 */
 .list{
-    width: 46%;
+    width: 880px;
     margin: 0 auto;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
 }
 
-.title h6{
+.list .title h6{
+    padding-left: 40px;
     padding-bottom: 10px;
     border-bottom: 1px solid #333;
+    font-weight: 600;
+}
+
+.novel_list li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.novel_list .texts{
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.viewmore{
+    width: 800px;
+    background-color: #fff;
+    border: 1px solid #999;
+
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 20px auto ;
 }
