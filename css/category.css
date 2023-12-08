@@ -1,0 +1,27 @@
+.slider{
+    text-align: center;    
+    width: 1110px;
+    margin: 100px auto;
+}
+
+.slider p{
+    margin-bottom: 30px;
+    font-weight: 400;
+    color: #aaa;
+}
+
+.cate_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+    margin-bottom: 90px;
+}
+
+.cate_section .photos{
+    display: flex;
+    gap: 27px;
+}
+
+
+

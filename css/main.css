@@ -8,11 +8,12 @@
 
 /* ## top */
 .top{
+  height: 40px;
+  line-height: 40px;
   width: 100%;
   background-color: #333;
   color:#fff;
   font-weight: 600;
-  cursor: pointer;
 }
 
 .top > .container {
@@ -20,6 +21,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+  cursor: pointer;
+}
+
+.top i{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0px;
 }
 
 

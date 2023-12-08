@@ -14,12 +14,16 @@
     <!-- slick slider-->
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <!-- 매그니픽 팝업 -->
+    <link rel="stylesheet" href="../js/magnific-popup.css">
 
     <!-- css 내꺼 -->
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/novel_1.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../popup/view_novel.css">
+    
     
     <!-- 제이쿼리 -->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -27,8 +31,10 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- 스크롤리빌 -->
     <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- 매그니픽팝업 -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="../js/jquery.magnific-popup.min.js"></script>
 
-    
 
 </head>
 <body>
@@ -89,7 +95,7 @@
                             <p class="p2">2024.02.28</p>
                         </div>
                         <div class="btn">
-                            <p>보기</p>
+                            <a href="../popup/view_novel.html" class="view_novel">보기</a>
                         </div>
                     </li>
                     <li>
@@ -98,7 +104,7 @@
                             <p class="p2">2024.02.28</p>
                         </div>
                         <div class="btn">
-                            <p>보기</p>
+                            <a href="../popup/view_novel.html" class="view_novel">보기</a>
                         </div>
                     </li>
                     <li>
@@ -107,7 +113,7 @@
                             <p class="p2">2024.02.28</p>
                         </div>
                         <div class="btn">
-                            <p>보기</p>
+                            <a href="../popup/view_novel.html" class="view_novel">보기</a>
                         </div>
                     </li>
                     <li>
@@ -116,7 +122,7 @@
                             <p class="p2">2024.02.28</p>
                         </div>
                         <div class="btn">
-                            <p>보기</p>
+                            <a href="../popup/view_novel.html" class="view_novel">보기</a>
                         </div>
                     </li>
                     <li>
@@ -125,7 +131,7 @@
                             <p class="p2">2024.02.28</p>
                         </div>
                         <div class="btn">
-                            <p>보기</p>
+                            <a href="../popup/view_novel.html" class="view_novel">보기</a>
                         </div>
                     </li>
                     <li>
@@ -134,7 +140,7 @@
                             <p class="p2">2024.02.28</p>
                         </div>
                         <div class="btn">
-                            <p>보기</p>
+                            <a href="../popup/view_novel.html" class="view_novel">보기</a>
                         </div>
                     </li>
                     <li>
@@ -143,7 +149,7 @@
                             <p class="p2">2024.02.28</p>
                         </div>
                         <div class="btn">
-                            <p>보기</p>
+                            <a href="../popup/view_novel.html" class="view_novel">보기</a>
                         </div>
                     </li>
                     <li>
@@ -152,7 +158,7 @@
                             <p class="p2">2024.02.28</p>
                         </div>
                         <div class="btn">
-                            <p>보기</p>
+                            <a href="../popup/view_novel.html" class="view_novel">보기</a>
                         </div>
                     </li>
                     <li>
@@ -161,7 +167,7 @@
                             <p class="p2">2024.02.28</p>
                         </div>
                         <div class="btn">
-                            <p>보기</p>
+                            <a href="../popup/view_novel.html" class="view_novel">보기</a>
                         </div>
                     </li>
                 </ul>
@@ -174,6 +180,14 @@
             <!--footer .container 로드 -->
         </div>
     </div>
+
+    <script>
+        $('.view_novel').magnificPopup({
+         type: 'ajax',
+         alignTop: true,
+         overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
+     });
+     </script>
 
     <script>
        $('.header').load('../inc/header.html')

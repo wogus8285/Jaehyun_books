@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="../css/novel_1.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../popup/view_novel.css">
     
     <!-- 제이쿼리 -->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
@@ -95,7 +96,17 @@
                 <ul>
                     <li>
                         <div class="texts">
-                            <h6>103화</h6>
+                            <h6>106화</h6>
+                            <p class="p2">2024.02.28</p>
+                        </div>
+                        <div class="btn">
+                            <a href="../popup/view_novel.html" class="view_novel"><p>보기</p></a>
+                            
+                        </div>
+                    </li>
+                    <li>
+                        <div class="texts">
+                            <h6>105화</h6>
                             <p class="p2">2024.02.28</p>
                         </div>
                         <div class="btn">
@@ -104,16 +115,7 @@
                     </li>
                     <li>
                         <div class="texts">
-                            <h6>103화</h6>
-                            <p class="p2">2024.02.28</p>
-                        </div>
-                        <div class="btn">
-                            <a href="../popup/view_novel.html" class="view_novel"><p>보기</p></a>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="texts">
-                            <h6>103화</h6>
+                            <h6>104화</h6>
                             <p class="p2">2024.02.28</p>
                         </div>
                         <div class="btn">
@@ -195,16 +197,10 @@
     </script>
 
     <script>
-        $(document).ready(function() {
-
-        $('.view_novel').magnificPopup({
-            type: 'ajax',
-            alignTop: true,
-            overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
-        });
-
-      
-
-        });
+   	$('.view_novel').magnificPopup({
+		type: 'ajax',
+		alignTop: true,
+		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
+	});
     </script>
 </body>
