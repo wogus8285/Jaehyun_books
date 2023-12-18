@@ -1,72 +1,74 @@
 <div class="container">
-    <div class="logo_wrap">
-      <div class="logo"><a href="../pages/main.html">재현북스</a></div>
+  <div class="logo_wrap">
+    <div class="logo"><a href="../pages/main.html">재현북스</a></div>
     <div class="search">
-      <input type="text" placeholder="검색어 입력">
+      <input type="text" placeholder="검색어 입력" />
     </div>
-    </div>
-
-    <!-- <div class="gnb"> -->
-      <div class="gnb">
-        <div class="cate">
-          <i class="xi-bars"></i>
-          <p>카테고리</p>
-        </div>
-        <ul>
-          <li>
-            <a href="../pages/category.html#fantasy">
-              <p># 판타지</p>
-            </a>
-          </li>
-          <li>
-            <a href="../pages/category.html#romance">
-              <p># 로맨스</p>
-            </a>
-          </li>
-          <li>
-            <a href="../pages/category.html#comic">
-              <p># 일상/개그</p>
-            </a>
-          </li>
-          <li>
-            <a href="../pages/category.html#sf">
-              <p># SF</p>
-            </a>
-          </li>
-          <li>
-            <a class="porn" href="../pages/event_3.html"><p># 29금</p><img src="../images/main/29_ss.png" alt=""></a>
-          </li>
-        </ul>
-      </div>
   </div>
 
-  <!-- UP_botton -->
-  <div class="up_btn"><img src="../images/Up_button.png" alt=""></div>
+  <!-- <div class="gnb"> -->
+  <div class="gnb">
+    <div class="cate">
+      <i class="xi-bars"></i>
+      <p>카테고리</p>
+    </div>
+    <ul>
+      <li>
+        <a href="../pages/category.html#fantasy">
+          <p># 판타지</p>
+        </a>
+      </li>
+      <li>
+        <a href="../pages/category.html#romance">
+          <p># 로맨스</p>
+        </a>
+      </li>
+      <li>
+        <a href="../pages/category.html#comic">
+          <p># 일상/개그</p>
+        </a>
+      </li>
+      <li>
+        <a href="../pages/category.html#sf">
+          <p># SF</p>
+        </a>
+      </li>
+      <li>
+        <a class="porn" href="../pages/event_3.html"
+          ><p># 29금</p>
+          <img src="../images/main/29_ss.png" alt=""
+        /></a>
+      </li>
+    </ul>
+  </div>
+</div>
 
+<!-- UP_botton -->
+<div class="up_btn"><img src="../images/Up_button.png" alt="" /></div>
 
-  <script>
-    // ## gnb 
-      // # 클론 만들기
-      var gnbClone = $('.gnb').contents().clone()
-      var gnb2 = $('<div class="gnb gnb2"></div>')
-      gnb2.append(gnbClone)
-      // console.log(gnb2);
-      gnb2.appendTo('.header')
+<script>
+  // ## gnb
+  // # 클론 만들기
+  var gnbClone = $('.gnb').contents().clone()
+  var gnb2 = $('<div class="gnb gnb2"></div>')
+  gnb2.append(gnbClone)
+  // console.log(gnb2);
+  gnb2.appendTo('.header')
 
-      var headerHeight = $('.header').outerHeight()
+  var headerHeight = $('.header').outerHeight()
 
-            // gnb 클론 + 업버튼 //
-      $(window).scroll(function(){
-        if($(this).scrollTop() > headerHeight){
-          gnb2.addClass('show')
-          $('.up_btn').addClass('show')
-        }else{
-          gnb2.removeClass('show')
-          $('.up_btn').removeClass('show')
-        }
-      })
+  // gnb 클론 + 업버튼 //
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > headerHeight) {
+      gnb2.addClass('show')
+      $('.up_btn').addClass('show')
+    } else {
+      gnb2.removeClass('show')
+      $('.up_btn').removeClass('show')
+    }
+  })
 
-      $('.up_btn').click(function(){
-        $('html, body').animate({scrollTop: 0})
-      })
-  </script>
+  $('.up_btn').click(function () {
+    $('html, body').animate({ scrollTop: 0 })
+  })
+</script>

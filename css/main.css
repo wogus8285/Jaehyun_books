@@ -1,18 +1,15 @@
-
-.container{
+.container {
   width: 1110px;
   margin: 0 auto;
 }
 
-
-
 /* ## top */
-.top{
+.top {
   height: 40px;
   line-height: 40px;
   width: 100%;
   background-color: #333;
-  color:#fff;
+  color: #fff;
   font-weight: 600;
 }
 
@@ -25,39 +22,37 @@
   cursor: pointer;
 }
 
-.top i{
+.top i {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   right: 0px;
 }
 
-
 /* ## header ## (header.css) */
 
 /* ## slider ## */
-.slider_main{
+.slider_main {
   width: 1400px;
   margin: 0 auto;
   height: 405px;
   position: relative;
 }
 
-.slider_main .slides{
-  
+.slider_main .slides {
 }
 
-.slider_main img{
+.slider_main img {
   width: 100%;
 }
 
-.slider_main .slide{
+.slider_main .slide {
   position: relative;
 }
 
-  /* 포지션 relative를 slide_main한테 줬더니 가로값이 안먹혔음. 슬릭 슬라이드 때문인지 개발자 도구로 보니까 중간에 위드값이 정신 나간듯이 넓게 잡혀 있는 구간이 있었음. 그래서 렐러티브를 그냥 slide한테 주니깐 left가 먹히더라. 후,,,
+/* 포지션 relative를 slide_main한테 줬더니 가로값이 안먹혔음. 슬릭 슬라이드 때문인지 개발자 도구로 보니까 중간에 위드값이 정신 나간듯이 넓게 잡혀 있는 구간이 있었음. 그래서 렐러티브를 그냥 slide한테 주니깐 left가 먹히더라. 후,,,
     */
-.slider_main .text{
+.slider_main .text {
   position: absolute;
   color: #fff;
   bottom: 60px;
@@ -68,11 +63,11 @@
   /* margin-bottom: -100px; */
 }
 
-.slider_main .text p{
+.slider_main .text p {
   font-weight: 300;
 }
 
-.slider_main .control i{
+.slider_main .control i {
   /* 위치 */
   position: absolute;
   top: 50%;
@@ -82,85 +77,95 @@
   height: 40px;
   width: 40px;
   border-radius: 100%;
-  border: 1px solid   #999;
-  color: #888 ;
+  border: 1px solid #999;
+  color: #888;
   font-size: 14px;
 
   text-align: center;
   line-height: 40px;
 }
 
-.slider_main .control i.prev{
+.slider_main .control i.prev {
   left: -25px;
 }
 
-.slider_main .control i.next{
+.slider_main .control i.next {
   right: -25px;
 }
 
 /*  ## section_1 */
-.section_1{
+.section_1 {
   margin: 100px 0;
   text-align: center;
 }
 
-.section_1 h3{
+.section_1 h3 {
   font-weight: 600;
   margin-bottom: 25px;
 }
 
-.section_1 p{
+.section_1 p {
   color: #777;
   font-weight: 300;
   margin-bottom: 30px;
 }
 
-.section_1 ul{
+.section_1 ul {
   display: flex;
   justify-content: space-between;
 }
 
-.section_1 li{
+.section_1 li {
   border-radius: 15px;
   overflow: hidden;
 }
-.section_1 a:hover img{
-  transform: scale(1.1)
+.section_1 a:hover img {
+  transform: scale(1.1);
 }
 
-
 /* ## section_2 */
-.section_2{
+.section_2 {
   display: flex;
   margin-top: 150px;
   height: 400px;
 }
 
-.section_2 .left{
-width: 320px;
+.section_2 .left {
+  width: 320px;
 }
 
-.section_2 .left h3{
+.section_2 .left h3 {
   font-weight: 600;
 }
 
-.section_2 .left p{
+.section_2 .left p {
   font-weight: 300;
   color: #777;
   margin: 20px 0;
 }
 
-.section_2 .left .p2{
+.section_2 .left .p2 {
   font-weight: 300;
   color: #999;
 }
 
-.section_2 .left .time_limit{
+.section_2 .left .time_limit {
   padding-left: 70px;
   position: relative;
 }
 
-.section_2 .left .time_limit::before{
+.section_2 .left .time_limit::after {
+  content: '';
+  background-color: red;
+  width: 2px;
+  height: 2px;
+  border-radius: 100%;
+  position: absolute;
+  left: 30px;
+  top: 0;
+}
+
+.section_2 .left .time_limit::before {
   content: '';
   background-color: #333;
   width: 30px;
@@ -171,93 +176,97 @@ width: 320px;
   top: 0;
 }
 
-.section_2 .left .time_icon{
-    content: '';
-    width: 8px;
-    height: 8px;
-    /* background-color: red; */
-    border-bottom: 2px solid #fff;
-    border-left: 2px solid #fff;
-    
-    position: absolute;
-    top: 6px;
-    left: 35px;
-    
-    transform-origin: bottom left;
-    /* transform: rotate(0deg); */
-    transition: all 1.3s;
+.time_move {
+  width: 1.5px;
+  height: 10px;
+  background-color: #fff;
+  position: absolute;
+  left: 34.5px;
+  top: 5.5px; /* 적절한 위치로 조정해주세요 */
+  transform-origin: bottom center;
 }
 
+.section_2 .left .time_icon {
+  content: '';
+  width: 8px;
+  height: 8px;
+  /* background-color: red; */
+  border-bottom: 2px solid #fff;
+  /* border-left: 2px solid #fff; */
 
+  position: absolute;
+  top: 6px;
+  left: 35px;
 
-.section_2 .right{
+  transform-origin: bottom left;
+  transform: rotate(0deg);
+  transition: all 1.3s;
+}
+
+.section_2 .right {
   flex: 1;
 }
 
-.section_2 .right ul{
+.section_2 .right ul {
   /* width: 100%; */
   display: flex;
   justify-content: space-between;
 }
-.section_2 .right img{
+.section_2 .right img {
   /* margin-bottom: 10px; */
 }
 
-.section_2 .right p:first-child{
+.section_2 .right p:first-child {
   padding-top: 10px;
 }
-.section_2 .right p{
+.section_2 .right p {
   font-weight: 600;
 }
 
-.section_2 .right .p3{
+.section_2 .right .p3 {
   color: #999;
   font-weight: 300;
   text-decoration: line-through;
 }
 
-.section_2 .right span{
-  color: #FF7455;   
+.section_2 .right span {
+  color: #ff7455;
 }
 
-  /* 호버하며 줄거리 나오게 해도 될듯 */
-.section_2 .photo{
+/* 호버하며 줄거리 나오게 해도 될듯 */
+.section_2 .photo {
   overflow: hidden;
 }
-.section_2 .photo img:hover{
-  transform: scale(1.1)
+.section_2 .photo img:hover {
+  transform: scale(1.1);
 }
 
-
-
 /*  ## section_3 */
-.section_3{
+.section_3 {
   text-align: center;
   margin: 100px 0;
 }
 
-.section_3 h3{
+.section_3 h3 {
   font-weight: 600;
 }
 
-.section_3 p{
+.section_3 p {
   font-weight: 300;
   color: #777;
   padding: 30px 0;
 }
 
-.section_3 ul{
+.section_3 ul {
   display: grid;
-  grid-template-columns: repeat(4 , 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 40px;
 }
-.section_3 li{
+.section_3 li {
   overflow: hidden;
 }
-.section_3 a:hover img{
-  transform: scale(1.1)
+.section_3 a:hover img {
+  transform: scale(1.1);
 }
 
-
 /*  ## footer ## (footer.css) */
-
