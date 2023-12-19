@@ -1,46 +1,166 @@
-
-
-.contents{
+.contents {
 }
 
-.age_limit{
-    height: 90vh;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.age_limit {
+  height: 90vh;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* .age_limit img{
     width: 525px;
 } */
 
-h5{
-    margin: 40px 0;
-    color: #787878;
+h5 {
+  margin: 40px 0;
+  color: #787878;
 }
 
-.btns{
-    /* margin-top: 40px; */
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    justify-content: center;
+.btns {
+  /* margin-top: 40px; */
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
 }
 
-.btn{
-    width: 220px;
-    height: 80px;
-    background-color: #fff;
-    border-radius: 999px;
-    border: 1px solid #333;
-    text-align: center;
-    font-size: 17px;
-    font-weight: 600;
-    line-height: 80px;
+.btn {
+  width: 220px;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 999px;
+  border: 1px solid #333;
+  text-align: center;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 80px;
 }
 
-.btn.filled{
-    color: #fff;
-    background-color: #333;
+.btn.filled {
+  color: #fff;
+  background-color: #333;
+}
+/* dimm */
+.dimm.show {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 99;
+}
+
+/* 29금 성인인증*/
+.ru29 {
+  width: 944px;
+  height: 628px;
+  border: 1px solid rgb(233, 146, 146);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 999;
+  /* background: url(../images/event/svg_29.svg); */
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
+  background-color: #fff;
+  display: none;
+}
+
+.ru29 h5 {
+  color: #222;
+}
+
+.ru29 h5.first {
+  padding-top: 70px;
+}
+
+.ru29 i {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  font-weight: bold;
+  font-size: 20px;
+  animation: blink 1s infinite, appear 6.5s;
+}
+.ru29 .bg {
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.3;
+  filter: blur(15px);
+}
+
+.ru29 h5:nth-child(1) {
+  animation: appear 0.5s;
+}
+
+.ru29 h5:nth-child(2) {
+  animation: appear 2s;
+}
+
+.ru29 h5:nth-child(4) {
+  animation: appear 4.5s;
+}
+
+.ru29 h5:nth-child(5) {
+  animation: appear 6s;
+}
+/* .ru29 h5.last {
+  animation: appear 5s;
+} */
+
+.ru29 .loader {
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-top: 4px solid #000;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  margin: 50px auto;
+  /* display: none; */
+  animation: appear 3s, spin 1s linear infinite;
+  /* animation-delay: 2s; */
+}
+
+/* ## 애니메이션 */
+/* 로딩 */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* 글자 */
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+/* 깜빡깜빡 */
+@keyframes blink {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0.3;
+  }
 }

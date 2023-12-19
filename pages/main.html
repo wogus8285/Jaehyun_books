@@ -7,6 +7,9 @@
 
     <!-- 초기화 -->
     <link rel="stylesheet" href="../css/reset.css" />
+    <!-- 파비콘 -->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
 
     <!-- css 남꺼 -->
     <!-- xeicon -->
@@ -147,26 +150,17 @@
           </ul>
         </div>
 
-        <!-- 섹션2 -->
-        <!-- <div class="section_2">
-          <div class="left">
-            <h3>E-Book 구매<br />런칭 기념 파격 할인!</h3>
-            <p>24시간 역대급 한정 특가~!!</p>
-            <div class="time_limit">
-              <div class="time_icon"></div>
-              <h3>02:11:07</h3>
-            </div>
-            <p class="p2">서둘러요, 얼마 남지 않았어요...!</p>
-          </div> -->
-
         <!--  -->
         <div class="section_2">
           <div class="left">
             <h3>E-Book 구매<br />런칭 기념 파격 할인!</h3>
             <p>24시간 역대급 한정 특가~!!</p>
             <div class="time_limit">
-              <div class="time_icon"></div>
-              <div class="time_move"></div>
+              <!--  -->
+              <div class="icon_wrap">
+                <div class="time_hour"></div>
+                <div class="time_min"></div>
+              </div>
               <h3>02:11:07</h3>
             </div>
             <p class="p2">서둘러요, 얼마 남지 않았어요...!</p>
@@ -329,41 +323,14 @@
       init()
 
       // 제이쿼리로 시계 돌리기
-      // var turn = 0
-      // setInterval(function () {
-      //   turn++
-      //   var turnDeg = 360 * turn
-
-      //   console.log(turnDeg)
-      //   $('.section_2 .left .time_icon')
-      //     // .css({transform :  'rotate(' + turnDeg + 'deg)'})
-      //     .css({ transform: `rotate(${turnDeg}deg)` })
-      //   $('.section_2 .left .time_icon::before').css({
-      //     transform: `rotate(${-turnDeg}deg)`,
-      //   })
-      // }, 2000)
-
       var turn = 0
       setInterval(function () {
         turn++
         var turnDeg = 360 * turn
-
-        // .time_icon 회전
-        $('.section_2 .left .time_icon').css({
+        // .time_min 회전
+        $('.section_2 .left .time_min').css({
           transform: `rotate(${turnDeg}deg)`,
         })
-
-        // 실제 HTML 요소 추가 후 회전
-        var $beforeElement = $('<div class="time_icon_before"></div>')
-        $('.section_2 .left .time_limit').append($beforeElement)
-        $('.section_2 .left .time_icon_before').css({
-          transform: `rotate(${-turnDeg}deg)`,
-        })
-
-        // 일정 시간 후 HTML 요소 삭제
-        setTimeout(function () {
-          $('.section_2 .left .time_icon_before').remove()
-        }, 10)
       }, 2000)
     </script>
   </body>

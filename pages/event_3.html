@@ -3,68 +3,106 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>어머! 너무 야해 >< </title>
+    <title>어머! 너무 야해 ><</title>
 
     <!-- 초기화 -->
-    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/reset.css" />
 
     <!-- css 남꺼 -->
     <!-- xeicon -->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
     <!-- slick slider-->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
 
     <!-- css 내꺼 -->
-    <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/event_3.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/event_3.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+
     <!-- 제이쿼리 -->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <!-- 슬릭 -->
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <!-- 스크롤리빌 -->
     <script src="https://unpkg.com/scrollreveal"></script>
-
-    
-
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="wrap">
+      <!-- ## header -->
+      <div class="header">
+        <!-- header .container => load -->
+      </div>
 
-        <!-- ## header -->
-        <div class="header">
-            <!-- header .container => load -->
+      <div class="contents">
+        <div class="age_limit">
+          <img src="../images/event/svg_29.svg" alt="" />
+          <h5>작품 감상을 위해 만 29세 이상의 성인 인증이 필요합니다.</h5>
+          <div class="btns">
+            <a href="./main.html" class="btn">29세 미만 나가기</a>
+            <a href="#" class="btn filled">성인 인증하기</a>
+          </div>
         </div>
+      </div>
 
-        <div class="contents">
+      <!--## footer-->
+      <div class="footer">
+        <!--footer .container 로드 -->
+      </div>
 
-            <div class="age_limit">
-                <img src="../images/event/svg_29.svg" alt="">
-                <h5>작품 감상을 위해 만 29세 이상의 성인 인증이 필요합니다.</h5>
-                <div class="btns">
-                    <a href="./main.html" class="btn">29세 미만 나가기</a>
-                    <a href="#" class="btn filled">성인 인증하기</a>
-                </div>
-            </div>
-            
+      <!-- 화면아 어두워져라! -->
+      <div class="dimm"></div>
+
+      <!--님아 나이 좀 되심?-->
+      <div class="ru29">
+        <h5 class="first">성인 인증을 위해 캠코더나 카메라를 켜주세요.</h5>
+        <h5>
+          AI가 영상 속 당신의 모습을 분석하여 나이를 추정합니다.<br />분석 결과
+          당신의 나이는.........
+        </h5>
+        <div class="loader"></div>
+        <h5>만 21세 입니다!!!</h5>
+        <h5 class="last">만 29세 이상 성인 인증에 실패하셨습니다.</h5>
+        <i class="xi-close"></i>
+        <div class="bg">
+          <img src="../images/event/svg_29.svg" alt="위 컨텐츠는 야해요" />
         </div>
-
-    
-
-
-        <!--## footer-->
-        <div class="footer">
-            <!--footer .container 로드 -->
-        </div>
-    
+      </div>
     </div>
 
     <script>
-       $('.header').load('../inc/header.html')
-       $('.footer').load('../inc/footer.html')
+      $('.header').load('../inc/header.html')
+      $('.footer').load('../inc/footer.html')
     </script>
-</body>
+
+    <script>
+      $('.btn.filled').click(function () {
+        $('.dimm').addClass('show')
+        $('.ru29').show()
+      })
+
+      $('.dimm').click(function () {
+        $('.dimm').removeClass('show')
+        $('.ru29').hide()
+      })
+
+      $('.ru29 i').click(function () {
+        $('.dimm').removeClass('show')
+        $('.ru29').hide()
+      })
+    </script>
+  </body>
+</html>
