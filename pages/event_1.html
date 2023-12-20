@@ -6,74 +6,163 @@
     <title>소설 재밌어? 당근이지!</title>
 
     <!-- 초기화 -->
-    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/reset.css" />
 
     <!-- css 남꺼 -->
     <!-- xeicon -->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
     <!-- slick slider-->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
 
     <!-- css 내꺼 -->
-    <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/event_1.css">
-    <link rel="stylesheet" href="../css/header.css">
-    <link rel="stylesheet" href="../css/footer.css">
-    
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/event_1.css" />
+
     <!-- 제이쿼리 -->
     <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <!-- 슬릭 -->
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
     <!-- 스크롤리빌 -->
     <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <!-- ## header -->
+    <div class="header">
+      <!-- header .container => load -->
+    </div>
 
-    
+    <div class="hero">
+      <div class="background">
+        <ul class="carrot">
+          <li>
+            <img src="../images/event/carrot.png" alt="" />
+          </li>
+          <li>
+            <img src="../images/event/carrot.png" alt="" />
+          </li>
+          <li>
+            <img src="../images/event/carrot.png" alt="" />
+          </li>
+          <li>
+            <img src="../images/event/carrot.png" alt="" />
+          </li>
+          <li>
+            <img src="../images/event/carrot.png" alt="" />
+          </li>
+          <li>
+            <img src="../images/event/carrot.png" alt="" />
+          </li>
+          <li>
+            <img src="../images/event/carrot.png" alt="" />
+          </li>
+          <li>
+            <img src="../images/event/carrot.png" alt="" />
+          </li>
+          <li>
+            <img src="../images/event/carrot.png" alt="" />
+          </li>
+        </ul>
+      </div>
+      <h2>
+        소설을 <span>10화</span> 읽을 때마다<br />
+        <span>당근</span>이 <span>하나</span>씩 심어져요!!
+      </h2>
+      <p>수확한 당근으로 경품을 교환할 수 있습니다</p>
+      <h4>수확한 당근 : <span>9</span>개</h4>
+    </div>
 
-</head>
-<body>
-
-     <!-- ## header -->
-     <div class="header">
-         <!-- header .container => load -->
-        </div>
-        
-        <div class="hero">
-            <div class="background"><img src="../images/event/event_1_bg.png" alt=""></div>
-            <h1>소설을 <span>10화</span> 읽을 때마다 <span>당근</span>이 <span>하나</span>씩 심어져요!!</h1>
-            <h5>수확한 당근으로 경품을 교환할 수 있습니다</h5>
-            <h2>수확한 당근 : OO개</h2>
-        </div>
-
-        <div class="section">
-            <ul>
-                <li>
-                    <img src="../images/event/A_carrot.svg" alt="">
-                    <div class="btn">응모하기</div>
-                </li>
-                <li>
-                    <img src="../images/event/Three_carrot.svg" alt="">
-                    <div class="btn">응모하기</div>
-                </li>
-                <li>
-                    <img src="../images/event/four_carrot.svg" alt="">
-                    <div class="btn">응모하기</div>
-                </li>
-            </ul>
-        </div>
-
-    
-
+    <div class="section">
+      <ul>
+        <li>
+          <img src="../images/event/A_carrot.svg" alt="" />
+          <div class="btn">응모하기</div>
+        </li>
+        <li>
+          <img src="../images/event/Three_carrot.svg" alt="" />
+          <div class="btn">응모하기</div>
+        </li>
+        <li>
+          <img src="../images/event/four_carrot.svg" alt="" />
+          <div class="btn">응모하기</div>
+        </li>
+      </ul>
+    </div>
 
     <!--## footer-->
     <div class="footer">
-        <!--footer .container 로드 -->
+      <!--footer .container 로드 -->
     </div>
-    
-
 
     <script>
-       $('.header').load('../inc/header.html')
-       $('.footer').load('../inc/footer.html')
+      $('.header').load('../inc/header.html')
+      $('.footer').load('../inc/footer.html')
+
+      // ########## 당근 ######## //
+      $(document).ready(function () {
+        var btns = $('.btn')
+
+        btns.eq(0).on('click', function () {
+          hideCarrots(1)
+        })
+
+        btns.eq(1).on('click', function () {
+          hideCarrots(3)
+        })
+
+        btns.eq(2).on('click', function () {
+          hideCarrots(4)
+        })
+
+        function hideCarrots(count) {
+          var carrots = $('.carrot > li > img').filter(function () {
+            return $(this).css('display') !== 'none'
+          })
+
+          var availableCarrots = carrots.length
+
+          if (availableCarrots === 0) {
+            alert('더 이상 당근이 남아있지 않습니다!')
+            return
+          } else if (availableCarrots < count) {
+            alert('남은 당근이 ' + availableCarrots + '개 뿐입니다!')
+            return
+          }
+
+          for (var i = 0; i < count; i++) {
+            if (i < availableCarrots) {
+              var randomIndex = Math.floor(Math.random() * carrots.length)
+              var selectedCarrot = carrots.eq(randomIndex)
+              selectedCarrot.hide()
+
+              carrots = carrots.not(selectedCarrot)
+            } else {
+              break
+            }
+          }
+
+          // 남은 당근 개수 업데이트
+          var remainingCarrots = $('.carrot > li > img').filter(function () {
+            return $(this).css('display') !== 'none'
+          }).length
+
+          $('h4 span').text(remainingCarrots)
+        }
+      })
     </script>
-</body>
+  </body>
+</html>

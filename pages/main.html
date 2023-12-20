@@ -124,28 +124,91 @@
           <ul>
             <li>
               <a href="./novel_8.html"
-                ><img src="../images/main/tobest_1.png" alt=""
-              /></a>
+                ><img src="../images/main/tobest_1.png" alt="" />
+                <div class="story">
+                  <p>
+                    몽환적인 숲.<br />
+                    홀린듯 그 숲에 들어갔다.<br />
+                    숲 속에는 아름다운 정원이 있었다. 그리고 그 정원을 거니는 한
+                    남자가 있었다.
+                    <br />
+                    흙으로 덮힌 정원을 어린아이처럼 뒹굴어도 티끌 하나 묻지
+                    않는다.<br />
+                    저 남자는 누구일까. 어째서 혼자 이런 숲 속에 사는 것일까.
+                    무슨 동화속에 나오는 요정이나 정령도 아닐텐데... 잠깐, 너가
+                    정령이 맞다고....!?
+                  </p>
+                </div>
+              </a>
             </li>
             <li>
               <a href="./novel_4.html"
-                ><img src="../images/main/tobest_2.png" alt=""
-              /></a>
+                ><img src="../images/main/tobest_2.png" alt="" />
+                <div class="story">
+                  <p>
+                    "상어의 가죽으로 갑옷을 만드는 자, 바다의 왕이 되리라"
+                    <br /><br />
+                    어린 시절 바다의 전설을 듣고 자란 ‘재현’은 성인이 되는 날,
+                    바다의 왕이 되기 위해서 상어 사냥에 나섰다.<br />
+                    하지만 바다는 위험했고, 상어는 그 위험한 바다에서 가장
+                    무시무시한 괴물! '재현'은 상어 사냥에 실패하고, 무인도에
+                    낙오되었다. 그런데...
+                    <br />
+                    저기에 왜 상어의 시체가...?
+                  </p>
+                </div>
+              </a>
             </li>
             <li>
               <a href="./novel_7.html"
-                ><img src="../images/main/tobest_3.png" alt=""
-              /></a>
+                ><img src="../images/main/tobest_3.png" alt="" />
+                <div class="story">
+                  <p>
+                    타임머신이 생긴다면 당신은 어느 시간선으로 여행을
+                    떠나겠는가? 0000년 12월25일로 가서 예수의 탄생을 보겠는가?
+                    잔다르크와 혁명의 주역이 되겠는가? 팝의 황제 마이클 잭슨의
+                    공연을 보겠는가?<br />
+                    아니, 난 미래로 갈 것이다! 이미 역사에 기록된 시간선이 아닌,
+                    어떠한 기록조차 없는 무궁한 가능성을 가진 미래로!!
+                    .......가지 말았어야 했다.<br />
+                    지구의 주인은 더이상 인간이 아니었다.
+                  </p>
+                </div>
+              </a>
             </li>
             <li>
               <a href="./novel_6.html"
-                ><img src="../images/main/tobest_4.png" alt=""
-              /></a>
+                ><img src="../images/main/tobest_4.png" alt="" />
+                <div class="story">
+                  <p>
+                    지옥에서 태어났으나, 천사의 날개를 가진 존재.<br />
+                    나는 악마인가, 천사인가.<br />
+                    알 수 없다.<br />
+                    하지만 한 가지 부정할 수 없는 진실이 있었다.<br />
+                    나는 천사에게도, 악마에게도 버림 받았다는 사실이다.<br />
+                    이제 나는 어디로 가야 하는가. 목적지는 없다. 다만, 나아갈
+                    뿐. 끊임없이 나아가도 보면, 누군가 나를 필요로 하겠지. 그럼
+                    비로소 나라는 존재도 의미를 가지게 될 것이다.
+                    <br />
+                  </p>
+                </div>
+              </a>
             </li>
             <li>
               <a href="./novel_5.html"
-                ><img src="../images/main/tobest_5.png" alt=""
-              /></a>
+                ><img src="../images/main/tobest_5.png" alt="" />
+                <div class="story">
+                  <p>
+                    "엄마, 저 계곡에 용이 살고 있었어!"<br />
+                    "그거 헛소문이야. 엄마가 이 마을에서 오래 살았지만, 용의
+                    그림자도 못 봤거든. 무엇보다 용은 성질이 고약해서 주변에
+                    사람들을 가만히 내버려두지 않는데. 장밀 용이 살았다면 우린
+                    벌써 용이 내뿜는 불꽃에 통구이가 됐을거야."<br />"아닌데...
+                    정말로 용이 살고 있었는데... "<br /><br />
+                    사람이 무서운 용과 그 용을 발견한 어린 소녀의 이야기!
+                  </p>
+                </div>
+              </a>
             </li>
           </ul>
         </div>
@@ -286,6 +349,11 @@
         // easing	:'linear',
         prevArrow: $('.slider_main .control i.prev'),
         nextArrow: $('.slider_main .control i.next'),
+      })
+
+      // ## 섹션1 호버
+      $('.section_1 li').hover(function () {
+        $(this).find('.story').toggleClass('active')
       })
 
       // ## time_limit (자바스크립트)
