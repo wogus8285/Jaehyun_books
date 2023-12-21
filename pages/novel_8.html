@@ -7,6 +7,8 @@
 
     <!-- 초기화 -->
     <link rel="stylesheet" href="../css/reset.css" />
+    <!-- 파비콘 -->
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
 
     <!-- css 남꺼 -->
     <!-- xeicon -->
@@ -72,18 +74,18 @@
             <p class="p2"><span>박재현</span> 저</p>
             <p class="p2"><span>재현북스</span> 출판</p>
             <p class="p3">
-              &nbsp;혼자가 되었다.<br />
-              &nbsp;법정공방 끝에 이혼이라는 최악의 과정으로.<br /><br />
-
-              &nbsp;웨딩드레스를 입고 행복한 미소를 짓고 있는 친구를 보고
-              있으니, 아직 잊지 못한 나의 끔찍한 결혼생활이 떠오른다. 몇 년이
-              지났는데... 아직도 그 시절의 기억이 떠오르면 두려움에 몸이 떨린다.
-              나는 도망치듯 식장을 빠져나왔다.<br />
-              &nbsp;하지만 식장을 나왔다고 집으로 갈 수도 없었다. 결혼식 장소가
-              다름 아닌 초호화 요트였으니. 귀가하겠다고 바다로 뛰어들 수는
-              없잖아... 나는 그냥 하염없이 달이 뜬 밤하늘을 바라보고 있었다.<br /><br />
-
-              &nbsp;그런 나에게 ‘그 남자’가 찾아왔다.
+              몽환적인 숲.<br /><br />
+              홀린듯 그 숲에 들어갔다.<br />
+              숲 속에는 아름다운 정원이 있었다. 그리고 그 정원을 거니는 한
+              남자가 있었다.
+              <br />
+              흙으로 덮힌 정원을 어린아이처럼 뒹굴어도 티끌 하나 묻지 않는
+              신기한 남자.<br />
+              저 남자는 누구일까. 어째서 혼자 이런 숲 속에 사는 것일까. 무슨
+              동화속에 나오는 요정이나 정령이라도 되나?<br /><br />
+              그런 상상을 하고 있었는데.... <br /><br />
+              갑자기 그 남자가 나에게 다가와서 하는 말, 잠깐, 너가 동화 속에
+              나오는 정령이 맞다고....!?
             </p>
           </div>
         </div>
@@ -117,10 +119,12 @@
     </div>
 
     <script>
-      $('.view_novel').magnificPopup({
-        type: 'ajax',
-        alignTop: true,
-        overflowY: 'scroll', // as we know that popup content is tall we set scroll overflow by default to avoid jump
+      $(document).ready(function () {
+        $('.view_novel').magnificPopup({
+          type: 'ajax',
+          alignTop: true,
+          overflowY: 'scroll', // as we know that popup content is tall we set scroll overflow by default to avoid jump
+        })
       })
     </script>
 

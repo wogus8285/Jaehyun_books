@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>옥타곤 위에 두 남자</title>
+    <!-- 파비콘 -->
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
 
     <!-- 초기화 -->
     <link rel="stylesheet" href="../css/reset.css" />
@@ -128,10 +130,12 @@
     </div>
 
     <script>
-      $('.view_novel').magnificPopup({
-        type: 'ajax',
-        alignTop: true,
-        overflowY: 'scroll', // as we know that popup content is tall we set scroll overflow by default to avoid jump
+      $(document).ready(function () {
+        $('.view_novel').magnificPopup({
+          type: 'ajax',
+          alignTop: true,
+          overflowY: 'scroll', // as we know that popup content is tall we set scroll overflow by default to avoid jump
+        })
       })
     </script>
 

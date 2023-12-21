@@ -25,7 +25,19 @@
 
 .cate_section .photos {
   display: flex;
-  gap: 27px;
+  /* gap: 27px; */
+  overflow: hidden;
+  width: 1081px;
+  margin: 0 auto;
+}
+
+.cate_section .photo img {
+  width: 250px;
+  height: 320px;
+}
+
+.cate_section .photo img:hover {
+  transform: scale(1.1);
 }
 
 /* */

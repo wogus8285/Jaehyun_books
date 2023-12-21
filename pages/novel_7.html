@@ -7,6 +7,8 @@
 
     <!-- 초기화 -->
     <link rel="stylesheet" href="../css/reset.css" />
+    <!-- 파비콘 -->
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
 
     <!-- css 남꺼 -->
     <!-- xeicon -->
@@ -72,18 +74,15 @@
             <p class="p2"><span>박재현</span> 저</p>
             <p class="p2"><span>재현북스</span> 출판</p>
             <p class="p3">
-              &nbsp;혼자가 되었다.<br />
-              &nbsp;법정공방 끝에 이혼이라는 최악의 과정으로.<br /><br />
-
-              &nbsp;웨딩드레스를 입고 행복한 미소를 짓고 있는 친구를 보고
-              있으니, 아직 잊지 못한 나의 끔찍한 결혼생활이 떠오른다. 몇 년이
-              지났는데... 아직도 그 시절의 기억이 떠오르면 두려움에 몸이 떨린다.
-              나는 도망치듯 식장을 빠져나왔다.<br />
-              &nbsp;하지만 식장을 나왔다고 집으로 갈 수도 없었다. 결혼식 장소가
-              다름 아닌 초호화 요트였으니. 귀가하겠다고 바다로 뛰어들 수는
-              없잖아... 나는 그냥 하염없이 달이 뜬 밤하늘을 바라보고 있었다.<br /><br />
-
-              &nbsp;그런 나에게 ‘그 남자’가 찾아왔다.
+              타임머신이 생긴다면 당신은 어느 시간선으로 여행을 떠나겠는가?
+              0000년 12월25일로 가서 예수의 탄생을 보겠는가? 잔다르크와 프랑스
+              혁명의 주역이 되겠는가? 이제는 다시 볼 수 없는 팝의 황제 마이클
+              잭슨의 은퇴 공연을 보러 가겠는가?<br /><br />
+              아니, 난 미래로 갈 것이다!<br />
+              이미 역사에 기록된 시간선이 아닌, 어떠한 기록조차 없는 무궁한
+              가능성을 가진 미래로!! <br /><br />.......가지 말았어야 했다.<br /><br />
+              지구의 주인은 더이상 인간이 아니었기에.<br /><br />
+              -치지직... 인간 발견... 로봇의 적... 사살 대상...
             </p>
           </div>
         </div>
@@ -117,10 +116,12 @@
     </div>
 
     <script>
-      $('.view_novel').magnificPopup({
-        type: 'ajax',
-        alignTop: true,
-        overflowY: 'scroll', // as we know that popup content is tall we set scroll overflow by default to avoid jump
+      $(document).ready(function () {
+        $('.view_novel').magnificPopup({
+          type: 'ajax',
+          alignTop: true,
+          overflowY: 'scroll', // as we know that popup content is tall we set scroll overflow by default to avoid jump
+        })
       })
     </script>
 

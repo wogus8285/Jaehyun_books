@@ -7,6 +7,8 @@
 
     <!-- 초기화 -->
     <link rel="stylesheet" href="../css/reset.css" />
+    <!-- 파비콘 -->
+    <link rel="icon" href="../favicon.ico" type="image/x-icon" />
 
     <!-- css 남꺼 -->
     <!-- xeicon -->
@@ -72,18 +74,15 @@
             <p class="p2"><span>박재현</span> 저</p>
             <p class="p2"><span>재현북스</span> 출판</p>
             <p class="p3">
-              &nbsp;혼자가 되었다.<br />
-              &nbsp;법정공방 끝에 이혼이라는 최악의 과정으로.<br /><br />
+              "엄마, 저 계곡에 용이 살고 있었어!"<br />
+              "그거 헛소문이야. 엄마가 이 마을에서 오래 살았지만, 용의 그림자도
+              못 봤거든. 무엇보다 용은 성질이 고약해서 주변에 사람들을 가만히
+              내버려두지 않는데. 장밀 용이 살았다면 우린 벌써 용이 내뿜는 불꽃에
+              통구이가 됐을거야."<br />"아닌데... 정말로 용이 살고 있었는데...
+              "<br /><br />
 
-              &nbsp;웨딩드레스를 입고 행복한 미소를 짓고 있는 친구를 보고
-              있으니, 아직 잊지 못한 나의 끔찍한 결혼생활이 떠오른다. 몇 년이
-              지났는데... 아직도 그 시절의 기억이 떠오르면 두려움에 몸이 떨린다.
-              나는 도망치듯 식장을 빠져나왔다.<br />
-              &nbsp;하지만 식장을 나왔다고 집으로 갈 수도 없었다. 결혼식 장소가
-              다름 아닌 초호화 요트였으니. 귀가하겠다고 바다로 뛰어들 수는
-              없잖아... 나는 그냥 하염없이 달이 뜬 밤하늘을 바라보고 있었다.<br /><br />
-
-              &nbsp;그런 나에게 ‘그 남자’가 찾아왔다.
+              사람을 무서워하는 용과, 그 용을 발견한 어린 소녀의 종을 넘나드는
+              유쾌한 우정 이야기!
             </p>
           </div>
         </div>
@@ -117,10 +116,12 @@
     </div>
 
     <script>
-      $('.view_novel').magnificPopup({
-        type: 'ajax',
-        alignTop: true,
-        overflowY: 'scroll', // as we know that popup content is tall we set scroll overflow by default to avoid jump
+      $(document).ready(function () {
+        $('.view_novel').magnificPopup({
+          type: 'ajax',
+          alignTop: true,
+          overflowY: 'scroll', // as we know that popup content is tall we set scroll overflow by default to avoid jump
+        })
       })
     </script>
 
