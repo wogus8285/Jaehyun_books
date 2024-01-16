@@ -1,6 +1,4 @@
-# ![StudyBookGIF (2)](https://github.com/wogus8285/Jaehyun_books/assets/145309318/6ea74fff-043b-4925-9759-b9d90e45dcf1)
-![StudyBookGIF](https://github.com/wogus8285/Jaehyun_books/assets/145309318/73baad8a-d1dd-44b8-81cf-c011035ed093)
-재현북스 웹페이지 포트폴리오
+# 📖재현북스 웹페이지 포트폴리오📖
 
 ## 소개
 이 프로젝트는 "재현북스"라는 가상의 웹소설 플랫폼을 구현한 것입니다. "재현북스"는 다양한 소설 콘텐츠를 제공하고 있으며, 독자들에게 다양한 이벤트 및 할인 정보를 제공합니다.
@@ -12,14 +10,31 @@
 4. **2023년 화제의 작품:** 지난 해에 인기를 끈 소설들이 모여있는 섹션으로, 독자들에게 이전에 인기를 끈 작품을 소개합니다.
 
 ## 기술 스택
-- **HTML5:** 웹페이지의 구조를 정의하기 위해 사용되었습니다.
-- **CSS3:** 웹페이지의 스타일링을 담당합니다.
-- **JavaScript 및 jQuery:** 동적 요소 및 슬라이더, 타임리밋 등의 기능을 구현하기 위해 사용되었습니다.
+- **HTML5:** 
+- **CSS3:** 
+- **JavaScript 및 jQuery:**
+
+- ## 디자인 스택
+- **피그마** 
+- **포토샵** 
+- **일러스트레이터**
+- **어도비 파이어베이스**
 
 ## 주의사항
-- 이 웹페이지는 실제 서적 판매 사이트가 아닙니다. 내용과 이미지는 가상의 것이며, 포트폴리오 및 학습 목적으로만 사용되었습니다.
+- 이 웹페이지는 실제로 존재하는 웹소설 플랫폼이 아닙니다. 내용과 이미지는 이 포토폴리오를 위해 제가 자체적으로 제작한 것으로, 실제로 존재하는 작품이 아닌 가상의 작품입니다.
 
-## 실행 방법
-1. 이 저장소를 클론합니다.
-   ```bash
-   git clone https://github.com/your-username/your-repository.git
+### 웹페이지 및 디자인 링크
+
+- **웹페이지 주소:** [재현북스 웹페이지 바로가기](http://wogus8285.dothome.co.kr/Jaehyun_books)
+- **디자인 주소:** [Figma 디자인 바로가기](https://www.figma.com/file/XDWYIJ9wtS0NZDpXky67Mq/JaehyunBooks?type=design&node-id=8-2&mode=design&t=yDySoAUAGnJYJtHS-0)
+- **깃헙 코드 주소:** [GitHub 코드 바로가기](https://github.com/wogus8285/Jaehyun_books/tree/main)
+
+## 웹페이지에 사용된 코드들 자세히 설명
+
+### 1. 타임리밋 기능 (Time Limit using Date Method)
+
+위 코드는 JavaScript를 사용하여 웹페이지에 타임리밋 기능을 구현한 부분입니다. `setInterval` 함수를 활용하여 1초마다 현재 시간과 설정된 종료 시간 간의 차이를 계산하고, 이를 화면에 업데이트합니다.
+
+### 2. Hover 이벤트 활용
+
+아래 코드는 CSS로 작성된 부분으로, 웹페이지에서 이미지와 텍스트에 호버 효과를 부여했습니다. 이미지에 마우스를 올리면 크기가 확대되는 효과가 나타나고, 텍스트에 마우스를 올리면 텍스트 색상이 변경되는 효과가 적용됩니다.
